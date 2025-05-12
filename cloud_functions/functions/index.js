@@ -2,7 +2,7 @@ const { onRequest } = require("firebase-functions/v2/https");
 const jwt = require("jsonwebtoken");
 const jwks = require("jwks-rsa");
 const firebaseAdmin = require("firebase-admin");
-const authgearEndpoint = "https://cube-crisp-110.authgear-staging.com"; //place your authgear app endpoint here
+const authgearEndpoint = "https://my-app.authgear.cloud"; //place your authgear app endpoint here
 
 // Get JWKs URI from Open ID Configuration documents
 const getJwksUri = async (authgearEndpoint) => {
